@@ -2,10 +2,10 @@ Course: Getting and Cleaning Data
 Course Project
 Written by Y. Sakoury
 
-Description
+Description:
 Get data spread over several files. Merge it in a logical way and make it tidy, so it is ready for next steps of analysing it. What it means logical way? Well it depends on the requests. But here we got most of it already arranged nicely but not completely. I tried to see the logical connection between the files. I also tried to guess by the demands detailed in the work (site). For instance should I use the 'Inertial Signals' data? No. Because any way demand 2 asks for Mean() and Std() which here don't exist.
 
-Decisions
+Decisions:
 1. What will be the best way to merge the data?
 1.1 First, rbind X_test to X_train and Y_test to Y_train.
 1.2 Then, cbind the result.
