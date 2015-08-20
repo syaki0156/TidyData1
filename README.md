@@ -5,10 +5,10 @@
 # Description
 Get data spread over several files. Merge it in a logical way and make it tidy, so it is ready for next steps of analysing it. What it means logical way? Well it depends on the requests. But here we got most of it already arranged nicely but not completely. I tried to see the logical connection between the files. I also tried to guess by the demands detailed in the work (site). For instance should I use the 'Inertial Signals' data? No. Because any way demand 2 asks for Mean() and Std() which here don't exist.
 
-Decisions:
+# Decisions:
 1. What will be the best way to merge the data?
-+ 1.1 First, rbind X_test to X_train and Y_test to Y_train.
-+ 1.2 Then, cbind the result.
+  + First, rbind X_test to X_train and Y_test to Y_train.
+  + Then, cbind the result.  
 This is a simple yet long way but it gives us a result without the side effects of using 'merge()'. 
 2. First, make second column of 'Features.txt' the names of columns. Extraction will be done only on "real" measurements and not calculations. This is done, depending on the explanations in Features_Info.txt.
 3. Convert numbers to more descriptive activity names.
